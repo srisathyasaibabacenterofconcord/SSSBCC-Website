@@ -1,11 +1,14 @@
+/* Body and general layout */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   color: #333;
   scroll-behavior: smooth;
   background-color: #fff8f0;
+  margin: 0;
 }
 
+/* Header */
 header {
   background: #800000; /* Maroon */
   color: white;
@@ -30,42 +33,60 @@ header nav ul li a {
   font-weight: bold;
   transition: color 0.3s;
 }
-header nav ul li a:hover { color: #ffa500; } /* Orange hover */
+header nav ul li a:hover, header nav ul li a.active { color: #ffa500; } /* Orange hover or active */
 
-/* Home banner */
+/* Hero Section for homepage */
 .home-banner {
   position: relative;
-  text-align: center;
-  overflow: hidden;
+  text-align: left;
+  max-width: 1200px;
+  margin: 20px auto 30px auto; /* reduce top and bottom spacing */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
 }
+
 .home-banner .baba-image {
+  flex: 1 1 600px;
   width: 100%;
   max-height: 550px;
   object-fit: cover;
-  filter: brightness(85%);
+  border-radius: 15px;
+  transition: transform 0.5s, box-shadow 0.5s;
 }
+.home-banner .baba-image:hover { transform: scale(1.02); box-shadow: 0 10px 20px rgba(0,0,0,0.3); }
+
 .home-banner .overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(255,165,0,0.8); /* Orange overlay */
-  color: #fff;
-  padding: 30px;
+  flex: 1 1 400px;
+  padding: 20px;
   border-radius: 15px;
 }
-.home-banner .overlay h2 { font-size: 2.5rem; margin-bottom: 10px; }
-.home-banner .overlay p { font-size: 1.2rem; }
+.home-banner .overlay h2 {
+  font-size: 2rem;
+  margin: 0 0 10px 0;
+  color: #003366; /* Dark Blue */
+}
+.home-banner .overlay p {
+  font-size: 1.1rem;
+  margin: 0;
+  color: #4b2e2e; /* Dark Maroon */
+}
 
 /* Sections */
-.content-section, .intro-section {
-  padding: 60px 20px;
+.content-section, .intro-section, .welcome-section {
+  padding: 40px 20px;
   max-width: 1000px;
-  margin: 0 auto 40px auto;
-  display: flex; flex-wrap: wrap; align-items: center; gap: 30px;
-  background: #fff; border-radius: 15px;
+  margin: 20px auto 40px auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+  background: #fff;
+  border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
+
 .text-left { flex:1; min-width: 300px; }
 .image-right { flex:1; min-width: 300px; }
 .image-right img {
@@ -90,16 +111,17 @@ header nav ul li a:hover { color: #ffa500; } /* Orange hover */
 
 /* Footer */
 footer {
-  background: #800000;
+  background: #800000; /* Maroon */
   color: white;
   text-align: center;
   padding: 20px 0;
+  margin-top: 0;
 }
 
 /* Responsive */
 @media(max-width: 768px) {
-  .content-section, .intro-section { flex-direction: column; }
+  .content-section, .intro-section, .welcome-section, .home-banner { flex-direction: column; }
   header nav ul { flex-direction: column; gap: 10px; margin-top: 10px; }
-  .home-banner .overlay h2 { font-size: 2rem; }
+  .home-banner .overlay h2 { font-size: 1.8rem; }
   .home-banner .overlay p { font-size: 1rem; }
 }
