@@ -6,120 +6,117 @@
 <title>Sri Sathya Sai Baba Center of Concord - Home</title>
 <link rel="stylesheet" href="style.css">
 <style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #fff8f0;
-        color: #4b2e2e;
-    }
+/* Body and Fonts */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #4b2e2e;
+    background-color: #fff8f0;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
 
-    header {
-        background-color: #ff6600;
-        color: white;
-        padding: 20px;
-        text-align: center;
-    }
+/* Header */
+header {
+    background: #800000; /* Maroon */
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
 
-    header .logo img {
-        height: 50px; /* Logo stays same size across all pages */
-        vertical-align: middle;
-        margin-right: 15px;
-    }
+header .logo { display: flex; align-items: center; }
+header .logo img { height: 50px; margin-right: 10px; }
 
-    nav ul {
-        list-style: none;
-        padding: 0;
-        margin: 10px 0 0 0;
-        display: flex;
-        justify-content: center;
-    }
+header nav ul {
+    display: flex; gap: 20px;
+}
+header nav ul li a {
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+header nav ul li a:hover, header nav ul li a.active { color: #ffa500; } /* Orange hover */
 
-    nav li {
-        margin: 0 15px;
-    }
+/* Hero Section */
+.hero-section {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    gap: 20px;
+    align-items: center;
+}
 
-    nav a {
-        color: white;
-        text-decoration: none;
-        font-weight: bold;
-    }
+.hero-image {
+    flex: 1 1 600px;
+    text-align: center;
+}
 
-    nav a:hover, nav a.active {
-        text-decoration: underline;
-    }
+.hero-image img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+}
 
-    /* Hero Section */
-    .hero-section {
-        display: flex;
-        flex-wrap: wrap;
-        max-width: 1200px;
-        margin: 40px auto;
-        padding: 0 20px;
-        gap: 20px;
-        align-items: flex-start;
-    }
+.hero-text {
+    flex: 1 1 400px;
+    min-width: 280px;
+}
 
-    .hero-image {
-        flex: 1 1 600px; /* Bigger image */
-        text-align: center;
-    }
+.hero-text h2 {
+    color: #003366;
+    font-size: 28px;
+    margin: 0 0 10px 0;
+}
 
-    .hero-image img {
-        width: 100%;
-        max-width: 600px; /* Increase size of Baba image */
-        border-radius: 10px;
-    }
+.hero-text p {
+    font-size: 18px;
+    margin: 0;
+}
 
-    .hero-text {
-        flex: 1 1 500px;
-        min-width: 300px;
-    }
+/* Welcome Section */
+.welcome-section {
+    max-width: 1000px;
+    margin: 20px auto 40px auto;
+    padding: 0 20px;
+}
 
-    .hero-text h2 {
-        color: #003366;
-        font-size: 28px;
-        margin-bottom: 10px;
-    }
+.welcome-section h2 {
+    font-size: 28px;
+    color: #003366;
+    margin-bottom: 10px;
+}
 
-    .hero-text p {
-        font-size: 18px;
-    }
+.welcome-section p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
 
-    /* Welcome Section */
-    .welcome-section {
-        max-width: 1000px;
-        margin: 40px auto;
-        padding: 0 20px;
-    }
+/* Links */
+a { color: #ff6600; text-decoration: none; }
+a:hover { text-decoration: underline; }
 
-    .welcome-section h2 {
-        font-size: 28px;
-        color: #003366;
-        margin-bottom: 15px;
-    }
+/* Footer */
+footer {
+    background-color: #800000;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
 
-    .welcome-section p {
-        font-size: 18px;
-        margin-bottom: 15px;
-    }
-
-    a {
-        color: #ff6600;
-        text-decoration: none;
-    }
-
-    a:hover {
-        text-decoration: underline;
-    }
-
-    footer {
-        background-color: #4b2e2e;
-        color: white;
-        text-align: center;
-        padding: 15px 0;
-        margin-top: 40px;
-    }
+/* Responsive */
+@media(max-width: 768px) {
+    .hero-section { flex-direction: column; }
+    header nav ul { flex-direction: column; gap: 10px; margin-top: 10px; }
+}
 </style>
 </head>
 <body>
@@ -140,7 +137,7 @@
     </nav>
 </header>
 
-<section class="hero-section" style="margin-bottom: 20px;">
+<section class="hero-section">
     <div class="hero-image">
         <img src="images/imagefile_4__SPLIT__1655022313734.png" alt="Sathya Sai Baba">
     </div>
@@ -150,7 +147,7 @@
     </div>
 </section>
 
-<section class="welcome-section" style="margin-top: 0;">
+<section class="welcome-section">
     <h2>Welcome to the Sri Sathya Sai Baba Center of Concord (SSSBCC)</h2>
     <p>
         The Sri Sathya Sai Baba Center of Concord (SSSBCC) was established in the late 1970s under Swami’s direct guidance and is one of the oldest centers in the United States. Located in Contra Costa County in the East Bay Area of California, the center is part of the California Region within Zone 1 of the Sri Sathya Sai Global Council (SSSGC).
