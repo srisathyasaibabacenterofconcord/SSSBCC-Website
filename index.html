@@ -22,7 +22,7 @@
     }
 
     header .logo img {
-        height: 50px;
+        height: 50px; /* Logo stays same size across all pages */
         vertical-align: middle;
         margin-right: 15px;
     }
@@ -49,64 +49,59 @@
         text-decoration: underline;
     }
 
+    /* Hero Section */
     .hero-section {
         display: flex;
         flex-wrap: wrap;
-        max-width: 1000px;
+        max-width: 1200px;
         margin: 40px auto;
         padding: 0 20px;
         gap: 20px;
-        align-items: center;
+        align-items: flex-start;
     }
 
     .hero-image {
-        flex: 1 1 500px;
+        flex: 1 1 600px; /* Bigger image */
         text-align: center;
     }
 
     .hero-image img {
         width: 100%;
-        max-width: 500px;
+        max-width: 600px; /* Increase size of Baba image */
         border-radius: 10px;
     }
 
     .hero-text {
-        flex: 1 1 400px;
+        flex: 1 1 500px;
         min-width: 300px;
     }
 
     .hero-text h2 {
         color: #003366;
-        font-size: 32px;
+        font-size: 28px;
         margin-bottom: 10px;
     }
 
     .hero-text p {
-        font-size: 20px;
+        font-size: 18px;
     }
 
-    .content-section {
-        display: flex;
-        flex-wrap: wrap;
+    /* Welcome Section */
+    .welcome-section {
         max-width: 1000px;
         margin: 40px auto;
         padding: 0 20px;
-        gap: 20px;
     }
 
-    .text-left {
-        flex: 1 1 500px;
+    .welcome-section h2 {
+        font-size: 28px;
+        color: #003366;
+        margin-bottom: 15px;
     }
 
-    .image-right {
-        flex: 1 1 400px;
-        text-align: center;
-    }
-
-    .image-right img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 10px;
+    .welcome-section p {
+        font-size: 18px;
+        margin-bottom: 15px;
     }
 
     a {
@@ -155,17 +150,14 @@
     </div>
 </section>
 
-<section class="content-section">
-    <div class="text-left">
-        <h2>Welcome to Our Center</h2>
-        <p>
-            The Sri Sathya Sai Baba Center of Concord (SSSBCC) was established in the late 1970s under Swami’s guidance and is one of the oldest centers in the United States. Located in the East Bay Area, California, the center hosts weekly Study Circles, Devotional, Service, Educare (Balvikas), and Young Adult programs. We invite everyone to experience the joy of spiritual learning and selfless service.
-        </p>
-        <p>Contact us at: <a href="mailto:ssbc.concord@gmail.com">ssbc.concord@gmail.com</a></p>
-    </div>
-    <div class="image-right">
-        <img src="images/imagefile_29__SPLIT__1651039323414.png" alt="Baba with devotees">
-    </div>
+<section class="welcome-section">
+    <h2>Welcome to the Sri Sathya Sai Baba Center of Concord (SSSBCC)</h2>
+    <p>
+        The Sri Sathya Sai Baba Center of Concord (SSSBCC) was established in the late 1970s under Swami’s direct guidance and is one of the oldest centers in the United States. Located in Contra Costa County in the East Bay Area of California, the center is part of the California Region within Zone 1 of the Sri Sathya Sai Global Council (SSSGC).
+    </p>
+    <p>
+        The center convenes every Thursday on Zoom for Study Circle discussions, and on the 2nd and 4th Sundays of each month for Devotional, Service, Sri Sathya Sai Educare (SSSE/Balvikas), and Young Adult (YA) programs at a private residence in Concord, CA. For more information, please contact us at <a href="mailto:ssbc.concord@gmail.com">ssbc.concord@gmail.com</a>.
+    </p>
 </section>
 
 <footer>
