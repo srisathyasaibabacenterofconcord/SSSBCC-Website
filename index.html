@@ -5,6 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sri Sathya Sai Baba Center of Concord - Home</title>
 <link rel="stylesheet" href="style.css">
+<style>
+/* Fading animation for quote */
+@keyframes fadeInOut {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    80% {opacity: 1;}
+    100% {opacity: 0;}
+}
+</style>
 </head>
 <body>
 
@@ -31,7 +40,7 @@
 
 <!-- Text Section -->
 <section class="hero-text" style="max-width:1000px; margin: 0 auto 40px auto; padding: 0 20px;">
-    <h2 style="text-align:center; font-size:32px; font-weight:bold; color:#003366; margin-bottom:20px;">Welcome to the Sri Sathya Sai Baba Center of Concord (SSSBCC)</h2>
+    <h2 style="text-align:center; font-size:36px; font-weight:bold; color:#003366; margin-bottom:20px;">Welcome to the Sri Sathya Sai Baba Center of Concord (SSSBCC)</h2>
     <p style="font-size:20px; margin-bottom:15px;">
         The Sri Sathya Sai Baba Center of Concord (SSSBCC) was established in the late 1970s under Swami’s direct guidance and is one of the oldest centers in the United States. Located in Contra Costa County in the East Bay Area of California, the center is part of the California Region within Zone 1 of the Sri Sathya Sai Global Council (SSSGC).
     </p>
@@ -42,7 +51,8 @@
 
 <!-- Baba Image Section -->
 <section class="hero-section" style="position:relative; text-align:center; max-width:1200px; margin:40px auto;">
-    <img src="images/imagefile_4__SPLIT__1655022313734.png" alt="Sathya Sai Baba" style="width:100%; max-height:550px; object-fit:cover; border-radius:10px;">
+    <!-- Adjusted to show top half fully -->
+    <img src="images/imagefile_4__SPLIT__1655022313734.png" alt="Sathya Sai Baba" style="width:100%; max-height:none; object-fit:contain; border-radius:10px;">
     <div class="fading-text" style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); font-size:36px; font-weight:bold; color:#ffa500; text-shadow:2px 2px 6px rgba(0,0,0,0.5); animation:fadeInOut 4s infinite;">
         "Love All, Serve All"
     </div>
