@@ -29,11 +29,11 @@
     </nav>
 </header>
 
-<!-- Content Section with Image -->
-<section class="content-section" style="max-width:1000px; margin:40px auto; padding:0 20px; display:flex; flex-wrap:wrap; gap:30px; align-items:flex-start;">
+<!-- Content Section with Image + Right Column -->
+<section class="content-section" style="max-width:1200px; margin:40px auto; padding:0 20px; display:flex; flex-wrap:wrap; gap:30px; align-items:flex-start;">
     
-    <!-- Text Column -->
-    <div style="flex:1 1 500px; font-size:20px; line-height:1.8; color:#4b2e2e;">
+    <!-- LEFT COLUMN (Center Programs) -->
+    <div style="flex:1 1 350px; font-size:20px; line-height:1.8; color:#4b2e2e;">
         <h2 style="text-align:center; font-size:36px; font-weight:bold; color:#003366; margin-bottom:30px;">Center Programs</h2>
         
         <h3 style="color:#003366; margin-bottom:10px;">Weekly Zoom Meetings</h3>
@@ -57,21 +57,53 @@
         <p style="margin-top:20px;">For meeting details, please send an email to <a href="mailto:ssbc.concord@gmail.com" style="color:#ff6600;">ssbc.concord@gmail.com</a>.</p>
     </div>
     
-    <!-- Image Column -->
-    <div style="flex:1 1 400px; text-align:center;">
-        <img src="images/anothermediapicBaba1.png" alt="Sathya Sai Baba" style="width:100%; max-width:400px; border-radius:10px;">
+    <!-- MIDDLE COLUMN (Image) -->
+    <div style="flex:1 1 300px; text-align:center;">
+        <img src="images/anothermediapicBaba1.png" alt="Sathya Sai Baba" style="width:100%; max-width:350px; border-radius:10px;">
     </div>
-    
+
+    <!-- RIGHT COLUMN (Regional + National Events) -->
+    <div style="flex:1 1 350px; font-size:20px; line-height:1.8; color:#4b2e2e;">
+        
+        <!-- Regional Events -->
+        <h2 style="text-align:center; font-size:32px; font-weight:bold; color:#003366; margin-bottom:20px;">Regional Events</h2>
+        <p style="margin-bottom:10px;">
+            Programs involving all the Sai Centers in <strong>Northern California</strong>.
+        </p>
+        <ul style="margin-left:20px; line-height:1.7;">
+            <li>Global Akhanda Bhajans (GAB)</li>
+            <li>Baba's Birthday Celebrations</li>
+            <li>Shivaratri</li>
+            <li>Mini Retreat</li>
+            <li>Other special regional offerings</li>
+        </ul>
+
+        <!-- Spacing -->
+        <div style="height:40px;"></div>
+
+        <!-- National Events -->
+        <h2 style="text-align:center; font-size:32px; font-weight:bold; color:#003366; margin-bottom:20px;">National Events</h2>
+        <p style="margin-bottom:10px;">
+            Events involving devotees from Sai Centers across <strong>all regions of the United States</strong>.
+        </p>
+        <ul style="margin-left:20px; line-height:1.7;">
+            <li>Young Adult (YA) Retreat</li>
+            <li>National Conferences & Trainings</li>
+            <li>National Retreats</li>
+            <li>Prasanthi Nilayam Pilgrimage (Parthi Pilgrimage)</li>
+            <li>Other national programs</li>
+        </ul>
+
+    </div>
+
 </section>
 
 <footer>
     <p>&copy; 2025 Sri Sathya Sai Baba Center of Concord. All rights reserved.</p>
 </footer>
-<script>
-  // Get current page filename
-  const currentPage = window.location.pathname.split("/").pop();
 
-  // Select all nav links
+<script>
+  const currentPage = window.location.pathname.split("/").pop();
   const navLinks = document.querySelectorAll("header nav ul li a");
 
   navLinks.forEach(link => {
