@@ -1,3 +1,6 @@
+/* -----------------------------
+   Global Styles
+------------------------------ */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #fff8f0;
@@ -6,6 +9,9 @@ body {
   padding: 0;
 }
 
+/* -----------------------------
+   Header + Navbar
+------------------------------ */
 header {
   background-color: #800000; /* Maroon */
   color: white;
@@ -19,9 +25,17 @@ header {
   z-index: 100;
 }
 
-header .logo { display: flex; align-items: center; }
-header .logo img { height: 50px; margin-right: 10px; }
+header .logo {
+  display: flex;
+  align-items: center;
+}
 
+header .logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+/* Navigation */
 header nav ul {
   display: flex;
   gap: 20px;
@@ -31,18 +45,20 @@ header nav ul {
 }
 
 header nav ul li a {
-  color: white;
+  color: white;             /* default nav text color */
   text-decoration: none;
   font-weight: bold;
 }
 
-header nav ul li a:hover, header nav ul li a.active { color: #ffa500; }
+/* Hover + Active (highlight) */
+header nav ul li a:hover,
 header nav ul li.active a {
-  color: #ffa500;
+  color: #ffa500;           /* highlight color */
 }
 
-
-/* Hero Section */
+/* -----------------------------
+   Hero Section
+------------------------------ */
 .hero-section {
   display: flex;
   flex-wrap: wrap;
@@ -60,13 +76,13 @@ header nav ul li.active a {
 
 .hero-image img {
   width: 100%;
-  object-fit: contain; /* ensures full face visible */
+  object-fit: contain;
   border-radius: 10px;
 }
 
 .fading-text {
   position: absolute;
-  top: 50%; /* roughly chest level */
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 28px;
@@ -86,7 +102,7 @@ header nav ul li.active a {
 }
 
 .hero-text {
-  flex: 1 1 66%; /* rest of screen */
+  flex: 1 1 66%;
   min-width: 300px;
   text-align: center;
 }
@@ -102,11 +118,25 @@ header nav ul li.active a {
   margin-bottom: 15px;
 }
 
-/* Links */
-a { color: #ff6600; text-decoration: none; }
-a:hover { text-decoration: underline; }
+/* -----------------------------
+   Content Links (NOT nav links)
+------------------------------ */
+section a,
+.content-section a,
+main a {
+  color: #ff6600;
+  text-decoration: none;
+}
 
-/* Footer */
+section a:hover,
+.content-section a:hover,
+main a:hover {
+  text-decoration: underline;
+}
+
+/* -----------------------------
+   Footer
+------------------------------ */
 footer {
   background-color: #800000;
   color: white;
@@ -115,8 +145,14 @@ footer {
   margin-top: 40px;
 }
 
-/* Responsive */
+/* -----------------------------
+   Responsive
+------------------------------ */
 @media(max-width: 768px) {
-  .hero-section { flex-direction: column; }
-  .fading-text { font-size: 24px; }
+  .hero-section {
+    flex-direction: column;
+  }
+  .fading-text {
+    font-size: 24px;
+  }
 }
