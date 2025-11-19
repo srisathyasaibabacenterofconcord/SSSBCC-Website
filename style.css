@@ -57,7 +57,6 @@ header nav ul li.active a {
   color: #ffa500;
 }
 
-
 /* -----------------------------
    Hero Section
 ------------------------------ */
@@ -148,42 +147,53 @@ footer {
 }
 
 /* -----------------------------
-   Responsive Navbar Fix
+   Responsive
 ------------------------------ */
-@media (max-width: 768px) {
+@media(max-width: 768px) {
+  /* Stack hero section */
+  .hero-section {
+    flex-direction: column;
+  }
+
+  .fading-text {
+    font-size: 24px;
+  }
+
+  /* Stack header/nav for mobile */
   header {
-    flex-direction: column;       /* stack logo and nav */
+    flex-direction: column;
     align-items: flex-start;
     padding: 10px;
   }
 
   header .logo {
-    margin-bottom: 10px;          /* space between logo and nav */
+    margin-bottom: 10px; /* space between logo and nav */
   }
 
   header nav ul {
-    flex-direction: column;       /* stack nav items vertically */
+    flex-direction: column; /* stack links vertically */
     width: 100%;
-    gap: 5px;                     /* smaller spacing for mobile */
+    gap: 5px;
     padding-left: 0;
   }
 
   header nav ul li {
-    width: 100%;                  /* full-width clickable area */
+    width: 100%;
   }
 
   header nav ul li a {
     display: block;
     width: 100%;
     padding: 8px 0;
-    text-align: left;             /* align text to left for mobile */
-    font-size: 16px;              /* smaller font on mobile */
+    text-align: left;
+    font-size: 16px;
   }
 }
 
-@media (max-width: 480px) {
+/* Extra small phones */
+@media(max-width: 480px) {
   header nav ul li a {
-    font-size: 14px;              /* further reduce text for very small screens */
+    font-size: 14px;
     padding: 6px 0;
   }
 }
