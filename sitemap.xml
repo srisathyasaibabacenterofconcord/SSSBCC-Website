@@ -1,18 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
    <url>
       <loc>https://srisathyasaibabacenterofconcord.github.io/</loc>
    </url>
+
    <url>
       <loc>https://srisathyasaibabacenterofconcord.github.io/who-is-baba.html</loc>
    </url>
+
    <url>
       <loc>https://srisathyasaibabacenterofconcord.github.io/history.html</loc>
    </url>
+
+   <url>
+      <loc>https://srisathyasaibabacenterofconcord.github.io/programs.html</loc>
+   </url>
+
    <url>
       <loc>https://srisathyasaibabacenterofconcord.github.io/bulletin.html</loc>
    </url>
+
    <url>
       <loc>https://srisathyasaibabacenterofconcord.github.io/contact.html</loc>
    </url>
+
 </urlset>
