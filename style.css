@@ -52,7 +52,7 @@ header nav ul li a {
 
 /* Hover + Active (highlight) */
 header nav ul li a:hover,
-header nav ul li.active a {
+header nav ul li a.active {
   color: #ffa500;           /* highlight color */
 }
 
@@ -93,7 +93,6 @@ header nav ul li.active a {
   text-align: center;
 }
 
-/* Fading animation */
 @keyframes fadeInOut {
   0% {opacity: 0;}
   20% {opacity: 1;}
@@ -132,6 +131,28 @@ section a:hover,
 .content-section a:hover,
 main a:hover {
   text-decoration: underline;
+}
+
+/* -----------------------------
+   PDF Viewer
+------------------------------ */
+.pdf-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 141%; /* aspect ratio for A4 paper */
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.pdf-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
 }
 
 /* -----------------------------
