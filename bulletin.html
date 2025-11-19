@@ -63,6 +63,20 @@
 <footer>
     <p>&copy; 2025 Sri Sathya Sai Baba Center of Concord. All rights reserved.</p>
 </footer>
+<script>
+  // Get current page filename
+  const currentPage = window.location.pathname.split("/").pop();
+
+  // Select all nav links
+  const navLinks = document.querySelectorAll("header nav ul li a");
+
+  navLinks.forEach(link => {
+    const linkPage = link.getAttribute("href");
+    if(linkPage === currentPage) {
+      link.classList.add("active");
+    }
+  });
+</script>
 
 </body>
 </html>
