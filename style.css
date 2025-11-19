@@ -148,13 +148,42 @@ footer {
 }
 
 /* -----------------------------
-   Responsive
+   Responsive Navbar Fix
 ------------------------------ */
-@media(max-width: 768px) {
-  .hero-section {
-    flex-direction: column;
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;       /* stack logo and nav */
+    align-items: flex-start;
+    padding: 10px;
   }
-  .fading-text {
-    font-size: 24px;
+
+  header .logo {
+    margin-bottom: 10px;          /* space between logo and nav */
+  }
+
+  header nav ul {
+    flex-direction: column;       /* stack nav items vertically */
+    width: 100%;
+    gap: 5px;                     /* smaller spacing for mobile */
+    padding-left: 0;
+  }
+
+  header nav ul li {
+    width: 100%;                  /* full-width clickable area */
+  }
+
+  header nav ul li a {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    text-align: left;             /* align text to left for mobile */
+    font-size: 16px;              /* smaller font on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  header nav ul li a {
+    font-size: 14px;              /* further reduce text for very small screens */
+    padding: 6px 0;
   }
 }
