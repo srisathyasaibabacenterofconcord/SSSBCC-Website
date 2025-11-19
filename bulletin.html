@@ -9,6 +9,27 @@
 <!-- Favicon -->
 <link rel="icon" href="images/SSSGC-USA-Transparent.png" type="image/png">
 
+<style>
+  /* Make iframe responsive */
+  .pdf-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 141%; /* aspect ratio for A4 paper: 297mm / 210mm ≈ 1.414 */
+    height: 0;
+    overflow: hidden;
+  }
+
+  .pdf-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+</style>
+
 </head>
 <body>
 
@@ -29,39 +50,14 @@
     </nav>
 </header>
 
-<!-- Content Section with Image -->
-<section class="content-section" style="max-width:1000px; margin:40px auto; padding:0 20px; display:flex; flex-wrap:wrap; gap:30px; align-items:flex-start;">
-    
-    <!-- Text Column -->
-    <div style="flex:1 1 500px; font-size:20px; line-height:1.8; color:#4b2e2e;">
-        <h2 style="text-align:center; font-size:36px; font-weight:bold; color:#003366; margin-bottom:30px;">Monthly Bulletin</h2>
-        
-        <h3 style="color:#003366; margin-bottom:10px;">Weekly Zoom Meetings</h3>
-        <p>
-            Every Thursday we meet on Zoom at <strong>8:45 PM</strong>. Meetings include announcements, a <strong>Study Circle</strong> where we study and discuss Baba's discourses and literature, followed by <strong>Arati</strong> and <strong>Closing Prayers</strong>.
-        </p>
-        
-        <h3 style="color:#003366; margin-top:25px; margin-bottom:10px;">In-Person Meetings</h3>
-        <p>
-            On the <strong>2nd & 4th Sundays</strong> of each month, meetings are held in person, usually around <strong>noon</strong>. Programs include:
-        </p>
-        <ul style="margin-left:20px; line-height:1.7;">
-            <li><strong>Devotional:</strong> Bhajans (devotional singing)</li>
-            <li><strong>Service:</strong> Singing at convalescent homes, serving food at the Concord Adult Homeless Shelter, donating/distributing supplies, preparing and distributing brown bag lunches to homeless people in the East Bay area</li>
-            <li><strong>SSSE/Balvikas:</strong> Education in human values classes for children</li>
-            <li><strong>Young Adult (YA) Programs:</strong> Discussions on Sai literature, preparing for regional events and offerings</li>
-        </ul>
-        
-        <p style="margin-top:20px; font-style:italic;">“Transform work into worship, and worship into wisdom” - Sathya Sai Baba</p>
-        
-        <p style="margin-top:20px;">For meeting details, please send an email to <a href="mailto:ssbc.concord@gmail.com" style="color:#ff6600;">ssbc.concord@gmail.com</a>.</p>
+<section class="content-section" style="max-width:1000px; margin:40px auto; padding:0 20px; text-align:center;">
+    <h2 style="color:#003366; font-size:36px; font-weight:bold; margin-bottom:30px;">Monthly Bulletin</h2>
+
+    <div class="pdf-container">
+        <iframe src="bulletins/current-bulletin.pdf" 
+                title="Monthly Bulletin PDF">
+        </iframe>
     </div>
-    
-    <!-- Image Column -->
-    <div style="flex:1 1 400px; text-align:center;">
-        <img src="images/anothermediapicBaba1.png" alt="Sathya Sai Baba" style="width:100%; max-width:400px; border-radius:10px;">
-    </div>
-    
 </section>
 
 <footer>
